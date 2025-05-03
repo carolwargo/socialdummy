@@ -1,0 +1,46 @@
+{
+    "profile": {
+      "name": "John Doe",
+      "occupation": "Designer, UI",
+      "location": "London, UK",
+      "birthday": "April 1, 1988",
+      "avatar": "/w3images/avatar3.png"
+    },
+    "posts": [
+      {
+        "id": 1,
+        "author": "John Doe",
+        "avatar": "/w3images/avatar2.png",
+        "time": "1 min ago",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+        "images": ["/w3images/lights.jpg", "/w3images/nature.jpg"],
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": 2,
+        "author": "Jane Doe",
+        "avatar": "/w3images/avatar5.png",
+        "time": "16 min ago",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+        "images": [],
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": 3,
+        "author": "Angie Jane",
+        "avatar": "/w3images/avatar6.png",
+        "time": "32 min ago",
+        "content": "Have you seen this?",
+        "images": ["/w3images/nature.jpg"],
+        "likes": 0,
+        "comments": []
+      }
+    ],
+    "notifications": [
+      { "id": 1, "content": "One new friend request" },
+      { "id": 2, "content": "John Doe posted on your wall" },
+      { "id": 3, "content": "Jane likes your post" }
+    ]
+  }
