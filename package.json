@@ -1,21 +1,25 @@
 {
   "name": "socialdummy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A social media app with a dummy backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carolwargo/socialdummy.git"
+    "start": "npm run dev",
+    "client": "npm run dev --prefix client",
+    "server": "json-server --watch api/db.json --port 3001",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/carolwargo/socialdummy/issues"
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "json-server": "^0.17.4"
   },
-  "homepage": "https://github.com/carolwargo/socialdummy#readme"
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "gh-pages": "^6.3.0"
+  }
 }
