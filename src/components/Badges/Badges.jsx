@@ -85,11 +85,11 @@ const badges = [
 
 const ProfileBadges = () => (
   <div >
-             <h6 className="w3-large mb-3 ">
+             <p className=" ">
                 <AiFillSafetyCertificate className="fa-fw"/>
                      
-                          <b style={{ marginLeft: "3px" }}>Badges</b>
-                        </h6>
+                          <b style={{ marginLeft: "3px" }}>Badge Options</b>
+                        </p>
     {badges.map((badge, index) => (
   <Badge
   key={index}

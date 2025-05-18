@@ -14,15 +14,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-text-size-adjust: 100%;
-}
 
-
-/* reset.css or InputStyles.css */
 
 /* Normalize all input elements */
 input,
@@ -62,4 +54,54 @@ input:focus,
 .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* Profile Images small, medium & large*/
+.profile-img-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-img-medium {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-img-large {
+
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*BUTTONS*/
+
+.new-post-floating-btn {
+  border-radius: 50%; 
+  background-color: #007bff;
+  color: #fff;
+  border:#ccc;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1050;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8)
 }

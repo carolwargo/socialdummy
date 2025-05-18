@@ -1,95 +1,163 @@
-/*Right col explore topics, classes, jobs, business*/
-.explore-topics,
-.explore-classes,
-.explore-jobs, 
-.explore-business {
-    border-bottom: 1px solid #dee2e6; /* Bootstrap border-bottom color */
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-  }
-  .explore-topics-entry,
-  .explore-classes-entry, 
-  .explore-jobs-entry, 
-  .explore-business-entry {
-    font-size: 0.875rem; /* Equivalent to Bootstrap .small */
-    font-family: 'Roboto', sans-serif;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-  }
-  .explore-topics-title,
-  .explore-classes-title, 
-  .explore-jobs-title, 
-  .explore-business-title {
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgb(77, 70, 70);
-    text-decoration: underline;
-    font-size: small;
-    letter-spacing: -.5px;
-  }
-  .explore-topics-title:hover,
-  .explore-classes-title:hover, 
-  .explore-jobs-title:hover, 
-  .explore-business-title:hover {
-    color: rgb(247, 128, 128);
-    text-decoration: underline;
-  }
-  .explore-topics-meta,
-  .explore-classes-meta, 
-  .explore-jobs-meta, 
-  .explore-business-meta {
-    font-weight: 500;
-    color: #6c757d; /* Bootstrap .text-muted */
-    opacity: 0.75;
-        font-size: small;
-    letter-spacing: -.5px;
-  }
- 
+.user-nav-wrapper {
+  background-color: #fff; /* Match your design */
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
 
-  .floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 60px;
-    z-index: 999;
+/* Optional: Make UserNav sticky */
+.user-nav-wrapper.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* Ensure the container aligns with Bootstrap's container */
+.user-nav-wrapper .nav-scroll-wrapper {
+  padding: 0 15px; /* Match Bootstrap container padding */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 576px) {
+  .user-nav-wrapper {
+    padding: 0.25rem 0;
+  }
+}
+
+/* Style ReactQuill to match textarea without border */
+.form-control.w3-round {
+    background-color: #fff;
+    width: 100% !important; /* Ensure full width */
   }
   
-  .btn-float {
-    background-color: black;
-    color: white;
+  .form-control.w3-round .ql-container {
+    border: none !important; /* Borderless */
+    min-height: 80px; /* Match textarea height */
     font-size: 1rem;
-    text-align: center;
-    border-radius: 25px;
-    width: 150px;
-    height: 50px;
+    border-radius: 4px !important; /* Rounded corners */
+  }
+  
+  .form-control.w3-round .ql-editor {
+    padding: 8px;
+    min-height: 80px; /* Prevent shrinking */
+    border: none !important; /* Borderless */
+  }
+  
+  .form-control.w3-round .ql-editor.ql-blank::before {
+    color: #999 !important; /* Placeholder text */
+    content: attr(placeholder) !important;
+    font-style: italic;
+    display: block;
+  }
+  
+  .form-control.w3-round .ql-toolbar {
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    background-color: #f8f9fa;
+    border-radius: 4px 4px 0 0;
+    display: block !important; /* Ensure toolbar visible */
+  }
+  
+  /* Previously undefined classes */
+  .preview-container {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .preview-image,
+  .preview-video {
+    max-width: 100%;
+    max-height: 120px;
+    border-radius: 4px;
+  }
+  
+  /* Toolbar styles */
+  .toolbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Image/video left, Post right */
+    align-items: center; /* Vertically center buttons */
+    gap: 8px; /* Space between buttons */
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  
+  /* Toolbar button styles */
+  .toolbar-btn {
+    display: inline-flex;
     align-items: center;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease;
+    justify-content: center;
+padding: 5px;
+    background-color: #f1f1f1; /* Light grey */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+    
+  /* Toolbar button styles */
+  .toolbar-btn-transparent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+padding: 6px;
+    background-color: transparent; /* no bg */
+    border-radius: 4px;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
   }
   
-  .btn-float:hover {
-    background-color: #333;
+  .toolbar-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .toolbar-btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  .post-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+padding: 8px;
+    background-color: #090909; /* Light grey */
+    border: 1px solid #060606;
+    border-radius: 4px;
+    color: #f3f2f2;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  /* Flex layout */
+  .flex-grow-1 {
+    flex-grow: 1 !important;
+    width: 100%; /* Ensure full width */
+  }
+  
+  /* Bootstrap 4 compatibility */
+  .d-flex.gap-2 {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem !important;
   }
   
 
-  /*SPACING UTILITIES*/
-  /*MARGIN UTILITIES*/
-  .margin {
-    margin: 16px !important;
-  }
-  .margin-top {
-    margin-top: 16px !important;
-  }
-  .margin-bottom {
-    margin-bottom: 16px !important;
-  }
-  .margin-left {
-    margin-left: 16px !important;
-  }
-  .margin-right {
-    margin-right: 16px !important;
+
+  
+
+  .newsfeed-scroll {
+    height: 100vh;
+    overflow-y: auto;
   }
 
-
+  

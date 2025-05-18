@@ -1,0 +1,121 @@
+.w3-card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 12px 24px;
+  }
+  
+  .d-flex {
+    display: flex !important;
+  }
+  
+  .align-items-start {
+    align-items: flex-start !important;
+  }
+  
+  .my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  
+  .w3-left {
+    float: left !important;
+  }
+  
+  .w3-circle {
+    border-radius: 50% !important;
+  }
+  
+  .w3-margin-right {
+    margin-right: 10px !important;
+  }
+  
+  .form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  .w3-border {
+    border: 1px solid #ccc !important;
+  }
+  
+  .w3-round {
+    border-radius: 4px !important;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1 !important;
+  }
+  
+  .toolbar {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .w3-button {
+    padding: 6px 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+  
+  .w3-light-grey {
+    background-color: #f1f1f1 !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  .w3-light-grey:hover {
+    background-color: #e0e0e0 !important;
+  }
+  
+  .w3-red {
+    background-color: #f44336 !important;
+    color: #fff !important;
+  }
+  
+  .w3-red:hover {
+    background-color: #d32f2f !important;
+  }
+  
+  .w3-small {
+    font-size: 0.8rem !important;
+    padding: 4px 8px !important;
+  }
+  
+  .preview-container {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .preview-image,
+  .preview-video {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 4px;
+  }
+  
+  .w3-right-align {
+    text-align: right !important;
+  }
+  
+  .btn.btn-dark {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem !important;
+  }

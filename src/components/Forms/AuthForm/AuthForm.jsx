@@ -176,7 +176,7 @@ export default function AuthForm() {
         </div>
 
         {error && <div className="form-error">{error}</div>}
-<Link to='/user'>
+<Link to='/home'>
      {/**
        <button type="submit" className="form-button">
           {isSignup ? 'Register Now' : 'Login'}

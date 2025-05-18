@@ -1,10 +1,10 @@
 // /src/pages/Home.jsx  
 
-import Newsfeed from "../../components/Newsfeed/Newsfeed";
-import Explore from "../../components/Explore/Explore";
-import PostModal from "../../components/Modals/PostModal"; 
+import Newsfeed from "../components/Newsfeed/Newsfeed";
+import Explore from "../components/Explore/Explore";
+import PostModal from "../components/Modals/PostModal"; 
 
-export default function UserHome() {
+export default function Home() {
     return (
       <div>
       <style>{`
