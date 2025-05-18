@@ -1,0 +1,60 @@
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align everything to left */
+}
+
+.post-img-title {
+  display: flex;
+  align-items: center; /* vertically center image and title */
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  text-align: center; /* optional, if you want to center everything */
+  margin-bottom: 5px;
+}
+
+.card-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.post-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+
+.post-date {
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+
+.likes-shares {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* optional: remove default paragraph spacing */
+  padding: 0; /* optional: adds spacing on left/right */
+  font-size: 12px;
+}
+
+.post-text-wrapper {
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.post-text-collapsed {
+  max-height: 80px;
+  opacity: 0.8;
+}
+
+.post-text-expanded {
+  max-height: 1000px;
+  opacity: 1;
+}

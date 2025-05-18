@@ -1,17 +1,34 @@
-import React from "react";  
-import Newsfeed from "../components/Newsfeed/Newsfeed"; 
-import "bootstrap/dist/css/bootstrap.min.css"; 
+// /src/pages/Home.jsx  
 
-const Home = () => {    
-  return (  
-      
-<div className="d-flex justify-content-center">
-  <div className="w-100" style={{ maxWidth: "100%", padding: "0 1rem" }}>
+import Newsfeed from "../../components/Newsfeed/Newsfeed";
+import Explore from "../../components/Explore/Explore";
+import PostModal from "../../components/Modals/PostModal"; 
+
+export default function UserHome() {
+    return (
+      <div>
+      <style>{`
+      .overflow-column {
+  height: 100vh;         
+  overflow-y: auto;       
+
+}
+      `}
+      </style>
+    <div className="">
+    <div className="row">
+  <div className="col-sm-12 col-md-8 col-lg-8"
+  style={{borderRight: "1px solid #dee2e6"}}>
     <Newsfeed />
   </div>
+  <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
+    <Explore />
+  </div>
 </div>
-
+    </div>
+    <PostModal /> 
+    </div>
   );
 }
 
-export default Home;
+

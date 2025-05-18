@@ -1,0 +1,49 @@
+/* ProfileBadges.module.css */
+
+.badgeContainer {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  .icon {
+    font-size: 11px;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+  
+
+  .badge-purple-light {
+    background-color: #f1d8fc !important;
+    border: 2px solid #8e44ad !important;
+    color: #8e44ad !important;
+  }
+  
+  .badge-orange-light {
+    background-color: #fbcec0 !important;
+    border: 2px solid #f83a00 !important;
+    color: #f83a00 !important;
+  }
+  
+  .badge-pink-light {
+    background-color: #fbcec0 !important;
+    border: 2px solid #ff0080 !important;
+    color: #ff0080 !important;
+  }
+  
+  .learnMore {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+  
+  .badgeShared {
+    width: 4.5rem;
+    margin-right: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
