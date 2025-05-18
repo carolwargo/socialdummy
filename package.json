@@ -1,42 +1,26 @@
 {
-  "name": "socialdummy",
-  "version": "1.0.0",
-  "description": "A social media app with a dummy backend",
-  "main": "index.js",
+  "name": "frontend",
+    "homepage": "https://carolwargo.github.io/social-dummy/", 
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npm run dev",
-    "client": "npm run dev --prefix client",
-    "server": "json-server --watch api/db.json --port 3001",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "npm install && npm install --prefix client",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^9.1.2",
-    "gh-pages": "^6.3.0",
-    "json-server": "^0.17.4"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@fontsource/roboto": "^5.2.5",
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-regular-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@mui/icons-material": "^7.1.0",
-    "@mui/material": "^7.1.0",
-    "@mui/styled-engine-sc": "^7.1.0",
-    "@popperjs/core": "^2.11.8",
-    "@toolpad/core": "^0.14.0",
-    "bootstrap-icons": "^1.13.1",
-    "html-react-parser": "^5.2.5",
-    "styled-components": "^6.1.18",
-    "three": "^0.175.0"
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.5",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
+    "vite": "^6.2.0"
   }
 }
