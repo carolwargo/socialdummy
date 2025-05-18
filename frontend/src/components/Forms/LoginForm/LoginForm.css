@@ -1,0 +1,113 @@
+/* === Container === */
+.form-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* === Form Groups === */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* === Input Fields === */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #efeeee;
+  color: #212121;
+  box-shadow: 0 0 0 2px #303030;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #555;
+  box-shadow: 0 0 0 2px #303030;
+}
+
+
+
+/* === Layout Helpers === */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-col {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* === Checkboxes === */
+.form-checkbox {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.25rem;
+  font-weight: 400;
+}
+
+/* Optional: style the input directly if needed */
+.form-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: #212121 solid 2px;
+  border-radius: 4px;
+}
+
+/* === Links === */
+.form-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+/* === Buttons === */
+.form-button {
+  width: 100%;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* === Footer === */
+.form-footer {
+  text-align: center;
+  margin-top: 1rem;
+}

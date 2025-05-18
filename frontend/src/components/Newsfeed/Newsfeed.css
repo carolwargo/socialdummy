@@ -1,0 +1,95 @@
+/*Right col explore topics, classes, jobs, business*/
+.explore-topics,
+.explore-classes,
+.explore-jobs, 
+.explore-business {
+    border-bottom: 1px solid #dee2e6; /* Bootstrap border-bottom color */
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+  .explore-topics-entry,
+  .explore-classes-entry, 
+  .explore-jobs-entry, 
+  .explore-business-entry {
+    font-size: 0.875rem; /* Equivalent to Bootstrap .small */
+    font-family: 'Roboto', sans-serif;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  .explore-topics-title,
+  .explore-classes-title, 
+  .explore-jobs-title, 
+  .explore-business-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(77, 70, 70);
+    text-decoration: underline;
+    font-size: small;
+    letter-spacing: -.5px;
+  }
+  .explore-topics-title:hover,
+  .explore-classes-title:hover, 
+  .explore-jobs-title:hover, 
+  .explore-business-title:hover {
+    color: rgb(247, 128, 128);
+    text-decoration: underline;
+  }
+  .explore-topics-meta,
+  .explore-classes-meta, 
+  .explore-jobs-meta, 
+  .explore-business-meta {
+    font-weight: 500;
+    color: #6c757d; /* Bootstrap .text-muted */
+    opacity: 0.75;
+        font-size: small;
+    letter-spacing: -.5px;
+  }
+ 
+
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 999;
+  }
+  
+  .btn-float {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-float:hover {
+    background-color: #333;
+  }
+  
+
+  /*SPACING UTILITIES*/
+  /*MARGIN UTILITIES*/
+  .margin {
+    margin: 16px !important;
+  }
+  .margin-top {
+    margin-top: 16px !important;
+  }
+  .margin-bottom {
+    margin-bottom: 16px !important;
+  }
+  .margin-left {
+    margin-left: 16px !important;
+  }
+  .margin-right {
+    margin-right: 16px !important;
+  }
+
+
